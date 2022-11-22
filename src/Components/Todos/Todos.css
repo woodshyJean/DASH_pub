@@ -1,0 +1,53 @@
+.todos-modal-container,
+.todos-goals-summary-container, .todos-right-container, 
+.todos-standalone-container, .todos-pomodoro-container, 
+.todos-pomodoro-settings{
+    display: flex;
+}
+
+.todos-modal-container{
+    flex-direction: row;
+    gap:1.25rem;
+    width:100%;
+    height: 85%;
+    /*background-color: rgba(18, 18, 18, .1);*/
+    background-color: rgba(238, 238, 238, .9);
+    border-radius: 1.875rem;
+    border: 1.5px solid rgba(255,255,255,.6);
+    border-style: inset;
+   /* box-shadow: 0px 0px 10px rgba(0,0,0,.2);*/
+   /*box-shadow: 0px 0px 50px 0px rgba(0,0,0,.65);*/
+   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+
+.todos-right-container{
+    flex-direction: column;
+    gap:1.5rem;
+    width: 48%;
+    height: 95%;
+    margin: 1.25rem 0rem;
+    /*margin-right: 1.25rem;*/
+}
+
+
+
+.todos-pomodoro-container{
+    height: 30%;
+    border-radius: .625rem;
+    box-shadow: 0 0 0px  rgba(0, 0, 0, 1);
+    background-color: rgba(255,255,255,0.2);
+    transform: scale(1,1);
+    transition: background-color .5s, transform .5s, box-shadow .5s;
+}
+
+.todos-pomodoro-container{
+    flex-direction: column;
+    color:white;
+}
+
+.todos-pomodoro-settings{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}

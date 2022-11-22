@@ -1,0 +1,87 @@
+.userGoal-container{
+    height: 100%;
+    width: 95%;
+    text-align:left;
+    font-family: 'Nunito', sans-serif;
+}
+
+.userGoal-statement{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    gap:1vw;
+    height: 45%;
+    font-size: 2vw;
+    color: black;
+    justify-content: space-between;
+}
+
+.userGoal-statement-text{
+    overflow-y: scroll;
+    line-height: 3ch;
+    font-weight: 600;
+}
+
+.userGoal-statement-text::-webkit-scrollbar{
+    width:0px;
+}
+
+.userGoal-statement-text::-webkit-scrollbar-thumb{
+    background-color: rgba(255,255,255,.9);
+    border-radius: 5px;
+}
+
+.userGoal-delete{  
+    font-size: .75vw;
+    max-width: fit-content;
+    align-self: flex-end;
+    margin-bottom: 1vw;
+    padding: 0px .65vw;
+    border-radius: 30px;
+    background-color: rgba(255,255,255,.5);
+    font-weight: 300;
+}
+
+
+.userGoal-seperator{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    color: black;
+}
+
+hr{
+    border: 1px solid black;
+    width: 30%;
+}
+
+.userGoal-relatedTodos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    gap:1.25rem;
+    padding: 1.5rem;
+    max-height: 35%;
+    width: inherit;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.userGoal-relatedTodos::-webkit-scrollbar{
+    width:1px;
+}
+
+.userGoal-relatedTodos::-webkit-scrollbar-thumb{
+    background-color: rgba(255,255,255,0);
+
+}
+
+.userGoal-btns{
+    background-color: white;
+    width:30px;
+    height: 30px;
+    border-radius: 100%;
+}

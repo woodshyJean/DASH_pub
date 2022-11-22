@@ -1,0 +1,240 @@
+.learnSet-container, .learnSet-options-container, .learnSet-main, .learnSet-options, 
+.learnSet-options-name-container, .learnSet-options-name, .learnSet-Options-btn, .learnSet-flashcard-main{
+    display: flex;
+}
+
+.learnSet-container{
+    flex-direction: column;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.learnSet-options-container{
+    /*background-color: blue;*/
+    width: inherit;
+    height: 15%;
+}
+
+.learnSet-options{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    height: fit-content;
+    width: 55%;
+    /*background-color: yellow;*/
+    gap:2.5rem;
+    align-items: center;
+}
+
+.learnSet-Options-btn{
+    width:fit-content;
+    height: fit-content;
+    /*background-color: pink;*/
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    text-transform: unset !important
+}
+
+.activeFlashcard{
+    background-color: green;
+}
+
+.learnSet-options-name-container{
+    margin-top: 1rem;
+    margin-right: 2rem;
+    height: fit-content;
+    width: 45%;
+    /*background-color: aquamarine;*/
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.learnSet-options-name{
+    width: 50%;
+    height: 50%;
+    /*background-color: blueviolet;*/
+    align-items: center;
+    gap:1rem;
+    justify-content: flex-end;
+    border-radius: 30px;
+}
+
+.learnSet-options-name p{
+    display: flex;
+    width: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    height: 100%;
+    font-size: 1rem;
+    /*background-color: orange;*/
+    color: black;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.learnSet-main{
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*align-items: center;
+    /*background-color: green;*/
+    width: 100%;
+    height: 85%;
+}
+
+.learnSet-flashcard-prevBtn, .learnSet-flashcard-nextBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 40%;
+    height:90%;
+    border-radius: 20px;
+    transition: transform .3s;
+}
+
+.learnSet-flashcard-prevBtn{
+    background-color: rgba(200,200,200);
+}
+.learnSet-flashcard-prevBtn:hover{
+    background-color:rgb(205, 92, 92);
+    transform:scale(1.015, 1.015)
+}
+.learnSet-flashcard-nextBtn{
+    background-color: rgba(150,150,150);
+}
+.learnSet-flashcard-nextBtn:hover{
+    background-color: rgb(41, 171, 135);
+    transform:scale(1.04, 1.04)
+}
+
+.learnSet-flashcard-container{
+    gap: 1.5rem;
+    width: 65%;
+    height: 87%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.learnSet-flashcard-questionNumber{
+    color:black;
+    font-size: 2rem;
+    position: absolute;
+    bottom:7vh;
+    left:2vw;
+}
+
+.learnSet-flashcard-btn-container{
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    height: 17%;
+    gap: 3rem;
+}
+
+
+.learnSet-flashcard-main{
+    flex-direction: column;
+    gap:1rem;
+    width:100%;
+    height: 80%;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.learnSet-options-closeBtn{
+    width: 50px;
+    height: 50px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: red;
+}
+
+.learnSet-Question{
+    /*background-color: #004F98;*/
+    background-color: rgb(40, 40, 40);
+}
+
+.learnSet-Answer{
+    background-color: #98FB98;
+    text-align: center;
+    color: black;
+}
+
+/*////////////////////////////////////////*/
+
+.learnOption-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    width: inherit;
+    height: inherit;
+}
+
+.learnOption-question-container, .learnOption-answer-container{
+    display: flex;
+    width:40%;
+    height: inherit;
+    border-radius: 20px;
+}
+
+.learnOption-question-container{
+    background-color: rgba(255,255,255, .5);
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.learnOption-answer-container{
+    background-color: rgba(255,255,255, .5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.learnOption-btn-container{
+    position: relative;
+    display: flex;
+    gap:1vw;
+    justify-content: space-evenly;
+}
+
+.learnOption-nextBtn{
+    background-color: orange;
+    width:200px;
+    height: 50px;
+    border-radius: 30px;
+    align-self: center;
+}
+
+.learnOption-multipleChoice-answer{
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: 10%;
+    background-color: red;
+}
+
+.userChosen-Answer{
+    background-color: yellow;
+}
+
+.userChosen-Answer-correct{
+    background-color: greenyellow;
+    border-radius: 5px;
+}
+
+.userChosen-Answer-wrong{
+    background-color: red;
+    border-radius: 5px;
+}
+
+.learnOption-simpleAnswer{
+    text-align: center;
+}

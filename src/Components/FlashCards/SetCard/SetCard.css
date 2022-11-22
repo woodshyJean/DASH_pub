@@ -1,0 +1,37 @@
+.setCard-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+    width: 100%;
+    height: 25%;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,.5);
+    white-space: nowrap;
+    transition: transform .5s, box-shadow .5s;
+}
+
+.setCard-container:hover{
+    transform: scale(1.015, 1.015);
+    box-shadow: 0 0 25px 0px rgba(0, 0, 0, .35);
+}
+
+.setCard-name, .setCard-overview,
+ .setCard-lastScore{
+    display: flex;
+}
+
+.setCard-name{
+    justify-content: center;
+    font-size: 1vw;
+}
+
+.setCard-overview{
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+}
+
+.setCard-lastScore{
+    justify-content: center;
+    font-size: 2vw;
+}

@@ -1,0 +1,160 @@
+.userModal-container, .userModal-info-container, 
+.userModal-form-container, .userModal-form, 
+.userModal-greeting, .userModal-signup-greeting,
+.userProf-container {
+    display: flex;
+}
+
+
+.userModal-form-container, .userModal-form, 
+.userModal-greeting, .userModal-signup-greeting,
+.responsive-form{
+    flex-direction: column;
+}
+
+.userModal-info-container, .userModal-form-container, .userProf-container{
+    justify-content: center;
+    align-items:center;
+}
+
+.userModal-container{
+    flex-direction: row;
+    /*width: 90vw;
+    height: 85vh;*/
+    width:100%;
+    height: 85%;
+    border-radius: 30px;
+    z-index: 100;
+    border: 1px solid rgba(255,255,255,.6);
+    border-style: inset;
+    /*box-shadow: 0px 0px 50px 0px rgba(0,0,0,.65);*/
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    
+}
+
+
+.userModal-info-container{
+    width: 50%;
+    font-weight: 500;
+    color:#f3f3f3;
+    background-color: rgba(18, 18, 18, .1);
+    /*background-color: rgba(238, 238, 238, .9);*/
+    border-radius: 30px 0px 0px 30px;
+    
+}
+
+.userModal-info-container P{
+    font-size: 15vw;
+}
+
+.userModal-form-container{
+    width: 50%;
+    gap:2.5vw;
+    background-color: rgba(238, 238, 238, .9);;
+    border-radius: 0px 30px 30px 0px;
+    font-size: 1vw;
+    white-space: nowrap;
+}
+
+.responsive-form{
+    display: inherit;
+    gap:1.5rem;
+}
+
+.userModal-form{
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    /*padding-bottom: 50px;*/
+}
+
+.userModal-greeting{
+    align-items: center;
+    /*margin-bottom: 50px;*/
+    color:#262526;
+    font-size: 1vw;
+}
+
+.userModal-greeting h1{
+    /*background: linear-gradient(to bottom right, #4568dc , #FF9190, #b06ab3);*/
+    color: black;
+    /*-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+}
+
+/* sign up form */
+
+.textfield-name{
+    width:250px;
+}
+
+.userModal-signup-greeting{
+    align-items: center;
+    font-size: 1.3vw;
+    color:#262526;
+}
+
+.userModal-sign-form-link{
+    align-self: center;
+}
+
+/* userProf modal */
+
+.userProf-container{
+    display: flex;
+    width: 100%;
+    /*background-color: rgba(18, 18, 18, .1);*/
+    background-color: rgba(238, 238, 238, .9);
+    border-radius: 30px;
+}
+
+.user-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:30rem;
+    height: 32rem;
+    gap:0rem;
+}
+
+.user-picture{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(255,255,255,.4);
+    width:25rem;
+    height: 25rem;                                                               
+    border-radius: 100%;
+}
+
+.user-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    font-size: 2vw;
+    height: 5vw;
+    width: 90%;
+}
+
+.user-logout-btn{
+    display:flex;
+    /*left:28vw;
+    bottom: 2vw;*/
+}
+
+.user-logout-btn:hover{
+    background-color: rgba(255,255,255,.2);
+}
+
+
+
+#email-isValid{
+    background-color: greenyellow;
+}
+
+#email-isNotValid{
+    background-color: red;
+}
+

@@ -1,0 +1,70 @@
+.todos-standalone-container{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 66.75%;
+    border-radius: .625rem;
+    background-color: rgba(0, 0, 0, 0);
+    transform: scale(1,1);
+    transition: background-color .5s, transform .5s, box-shadow .5s;
+    user-select:none;
+}
+
+.todos-standalone-container:hover {
+    /*background-color: rgba(255, 70, 85);*/
+    transform: scale(1.04,1.04);
+    box-shadow: 0 0 35px 0px rgba(0, 0, 0, .35);
+}
+
+.todos-standalone-todos{
+    display: inherit;
+    flex-direction: column;
+    gap:1rem;
+    height: 92%;
+    overflow-y: scroll;
+    border-radius: .625rem .625rem 0px 0px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.todos-standalone-todos::-webkit-scrollbar{
+    width:4px;
+}
+
+.todos-standalone-todos::-webkit-scrollbar-thumb{
+    background-color: rgba(255,255,255,.9);
+    border-radius: 5px;
+}
+
+.todos-standalone-filter{
+    font-weight: 200;
+    font-size: .70vw;
+    display: inherit;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3vw;
+    align-items: center;
+    max-width: inherit;
+    color:black;
+    white-space: nowrap;
+    height: 8%;
+    border-radius: 0px 0px .625rem .625rem;
+    background-color: rgba(255,255,255,.15);
+}
+
+.todos-standalone-filter p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: .2rem .5rem;
+    transition: transform .2s, background-color .2s;
+}
+
+.todos-standalone-filter P:hover{
+    transform: scale(1.2, 1.2);
+    background-color: rgba(255,255,255,.5);
+}
+
+.active-filter-btn{
+    transform: scale(1.2, 1.2);
+    background-color: rgba(255,255,255,.5);
+}

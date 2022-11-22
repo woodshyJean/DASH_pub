@@ -1,0 +1,31 @@
+.quickinfo-container{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto Mono', monospace;
+    gap: 16px;
+    color:#262526;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color:white;
+}
+
+.quickinfo-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.time_date-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.greeting_weather-container{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+}

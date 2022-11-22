@@ -1,0 +1,155 @@
+.pomodoro-container, .pomodoro-main, .pomodoro-control, .pomodoro-main-summary, .pomodoro-main-timers,
+ .pomodoro-main-timers-btns, .pomodoro-main-timers-name, .pomodoro-main-timers-time, .pomodoro-main-timers-timeBtns,
+ .pomodoro-main-timers-addBtn, .pomodoro-main-timers-subBtn{
+    display: flex;
+}
+.pomodoro-container{
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap:1vw;
+    /*background-color: white;*/
+    font-family: 'Nunito', sans-serif;
+    border-radius: .625rem;
+    user-select:none;
+    background-image: none;
+    font-size: 1vw;
+    transition: background-color .5s, transform .5s, box-shadow .5s, background-image .5s;
+}  
+
+.pomodoro-container:hover{
+    /*background-color: rgb(255, 255, 159);*/
+    transform: scale(1.04,1.04);
+    box-shadow: 0 0 35px 0px rgba(0, 0, 0, .35);
+}
+
+
+.pomodoro-main{
+    flex-direction: column;
+    /*background-color: red;*/
+    width: 70%;
+    height: 90%;
+    justify-content: space-between;
+    transition: background-color .5s, transform .5s, box-shadow .5s;
+}
+
+.pomodoro-control{
+    flex-direction: column;
+    justify-content: center;
+    gap:1vw;
+    align-items: center;
+    background-color: rgba(255,255,255,.15);
+    width: 25%;
+    height: 90%;
+    border-radius: 2rem;
+    font-weight: 400;
+    transition: box-shadow .5s, background-color, .5s, transform .5s;
+}
+
+.controlHover{
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.55);
+    background-color: rgba(255,255,255,.35);
+    transform: scale(1.02, 1.02);
+}
+
+.pomodoro-main-summary{
+    justify-content: space-around;
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+    align-items: center;
+    width:100%;
+    height: 15%;
+    font-size: .75vw;
+    font-weight: 300;
+    background-color: rgba(255,255,255,.8);
+    border-radius: 30px;
+}
+
+.pomodoro-main-timers{
+    /*background-color: pink;*/
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pomodoro-main-timers-btns{
+    flex-direction: column;
+    /*background-color: aqua;*/
+    color:black;
+    width: 27%;
+    transition: color .5s, transfrom .5s, box-shadow .5s, background-color .5s;
+
+}
+
+.pomodoro-main-timers-btns:hover{
+    color:#000;
+    transform: scale(1.06, 1.06);
+    background-color: rgba(255,255,255,.6);
+}
+
+.pomodoro-main-timers-name{
+    height: fit-content;
+    width: 100%;
+    font-size: 1vw;
+    /*background-color: coral;*/
+    justify-content: center;
+}
+
+.pomodoro-main-timers-time{
+    font-size: 1.75vw;
+    /*background-color: cornflowerblue;*/
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.pomodoro-main-timers-timeBtns{
+    /*background-color: gold;*/
+    flex-direction: row;
+    height: 36%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.focusBtn, .breakBtn, .roundBtn{
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 8px;
+    margin-bottom: 1rem;
+    transition: background-color, .5s;
+}
+
+
+.focusBtn:hover{
+    background-color: #B4FF9F;
+}
+
+.breakBtn:hover{
+    background-color: #FFA1A1;
+}
+
+.roundBtn:hover{
+    background-color: #FFD59E;
+}
+
+.focusBtn{
+    background-color: rgba(255,255,255,.15);
+}
+
+.breakBtn{
+    background-color: rgba(255,255,255,.15);
+}
+
+.roundBtn{
+    background-color: rgba(255,255,255,.15);
+}
+
+.focusHover{
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.55);
+    background-color: rgba(255,255,255,.35);
+    margin-bottom: 1.75rem;
+    transform: scale(1.02, 1.02);
+    color:black;
+}

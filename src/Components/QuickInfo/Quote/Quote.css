@@ -1,0 +1,30 @@
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 13vw;
+    height: 40vh;
+    border-radius: 30px;
+    padding: 8px;
+    background-color: rgba(238, 238, 238, .9);
+    color:rgba(0,0,0,.7);
+}
+
+.quote-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    gap:5px;
+}
+
+.quote-text-author{
+    align-self: start;
+    margin-top: 2rem;
+}
+
+.quote-text{
+    padding-top: 8px;
+    text-align: center;
+    font-size: 1vw;
+}

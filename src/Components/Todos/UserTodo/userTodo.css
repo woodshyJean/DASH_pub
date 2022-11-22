@@ -1,0 +1,129 @@
+.userTodo-container{
+    width:inherit;
+    height: 10%;
+    padding: 10px 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .625rem;
+    color:black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    user-select:none;
+}
+
+.userTodo-container:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+
+.userTodo-btn{
+    border: 2px solid white;
+    width:4%;
+    height:70%;
+    border-radius: 100%;
+}
+
+
+.todo-name-text{
+    width: 16vw;
+    font-size: 1.25vw;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.todo-name-text:hover{
+    overflow-x: scroll;
+}
+
+.todo-name-text::-webkit-scrollbar{
+    height:8px;
+}
+
+.todo-name-text::-webkit-scrollbar-thumb{
+    background-color: rgba(255,255,255,.9);
+    border-radius: 5px;
+}
+
+.todo-date{
+    min-width: 8vw;
+    font-size: .8vw;
+}
+
+.todo-date-text{
+    text-align: center;
+    background-color: rgba(255, 255, 255, .3);
+    width: 7vw;
+    padding: .5rem;
+    border-radius: 20px;
+}
+
+
+.todo-priority{
+    min-width: 4vw;
+}
+
+.todo-text-label{
+    font-weight: 300;
+    font-size: .55vw;
+}
+
+.todo-difficulty-text, .todo-priorty-text{
+    font-size: .9vw;
+}
+
+.todoBag{
+    display: flex;
+    height: 100%;
+    width:90%;
+    justify-content: space-between;
+}
+
+.todoBag-links{
+    display: flex;
+    gap:8px;
+    margin-left: 1rem;
+    align-items: center;
+    width: 48%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+
+}
+
+.todoBag-links:hover{
+    overflow-x: scroll;
+}
+
+.todoBag-links::-webkit-scrollbar{
+    height:8px;
+}
+
+.todoBag-links::-webkit-scrollbar-thumb{
+    background-color: rgba(255,255,255,.9);
+    border-radius: 5px;
+}
+
+.todoBag-notes{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: hidden;
+
+}
+
+.todoBag-notes:hover{
+    overflow-x: scroll;
+}
+
+.todoBag-notes::-webkit-scrollbar{
+    height:8px;
+}
+
+.todoBag-notes::-webkit-scrollbar-thumb{
+    background-color: rgba(255,255,255,.9);
+    border-radius: 5px;
+}

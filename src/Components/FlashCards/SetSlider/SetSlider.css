@@ -1,0 +1,70 @@
+.setSlider-container{
+    display: flex;
+    width: inherit;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.setSlider-set0, .setSlider-set1,
+.setSlider-set2, .setSlider-set3,
+.setSlider-set4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setSlider-set0{
+    position: relative;
+    background-color: red;
+    width:8%;
+    height: 40%;
+    z-index: 25;
+}   
+
+.setSlider-set1{
+    position: relative;
+    background-color:  green;
+    width:8%;
+    height: 60%;
+    z-index: 50;
+}
+
+.setSlider-set2{
+    position: relative;
+    background-color: blue;
+    width: 50%;
+    height: 80%;
+    z-index: 100;
+}
+
+.setSlider-set3{
+    position: relative;
+    background-color: blueviolet;
+    widtH:8%;
+    height: 60%;
+    z-index: 50;
+}
+
+.setSlider-set4{
+    position: relative;
+    background-color: yellow;
+    width:8%;
+    height: 40%;
+    z-index: 25;
+}
+
+.setSlider-leftBtn, .setSlider-rightBtn{
+    width:50px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 100%;
+}
+
+.setSlider-leftBtn{
+    margin-right: 2rem;
+}
+
+.setSlider-rightBtn{
+    margin-left: 2rem;
+}
